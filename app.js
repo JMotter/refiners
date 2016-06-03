@@ -33,7 +33,7 @@ var env = process.env.NODE_ENV || 'development';
 
 // development only
 if (env === 'development') {
-  app.use(express.errorHandler());
+  //app.use(express.errorHandler());
 }
 
 // production only
@@ -41,21 +41,22 @@ if (env === 'production') {
   // TODO
 }
 
+// Send all through this middleware.
+app.use('*', function(req, res, next) {
+  console.log('processing request **************->' + req.path);
+  next();
+});
+app.use(express.static(path.join(_dirname, 'public')));
 
 /**
  * Routes
  */
 
-// serve index and view partials
-app.get('/', routes.index);
-app.get('/partials/:name', routes.partials);
-
 // JSON API
 app.get('/api/name', api.name);
 
 // redirect all others to the index (HTML5 history)
-app.get('*', routes.index);
-
+app.get('*', routes.default);
 
 /**
  * Start Server
