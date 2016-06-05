@@ -2,26 +2,20 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('AppCtrl', function ($scope, $http) {
-
-    $http({
-      method: 'GET',
-      url: '/api/name'
-    }).
-    success(function (data, status, headers, config) {
-      $scope.name = data.name;
-    }).
-    error(function (data, status, headers, config) {
-      $scope.name = 'Error!';
-    });
-
+angular.module('refinersApp.controllers', []).
+  controller('homeCtrl', function ($scope) {
   }).
-  controller('MyCtrl1', function ($scope) {
-    // write Ctrl here
-
+  controller('trainingCtrl', function ($scope) {
   }).
-  controller('MyCtrl2', function ($scope) {
-    // write Ctrl here
-
+  controller('1911Ctrl', function ($scope) {
+  }).
+  controller('suppressorCtrl', function ($scope) {
+  }).
+  controller('servicesCtrl', function ($scope) {
+  }).
+  controller('contactCtrl', function ($scope) {
+  }).
+  controller('aboutCtrl', function ($scope) {
+  }).
+  controller('locationCtrl', function ($scope) {
   });

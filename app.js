@@ -46,7 +46,7 @@ app.use('*', function(req, res, next) {
   console.log('processing request **************->' + req.path);
   next();
 });
-app.use(express.static(path.join(_dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 /**
  * Routes

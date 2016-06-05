@@ -2,24 +2,48 @@
 
 // Declare app level module which depends on filters, and services
 
-angular.module('myApp', [
-  'myApp.controllers',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives'
+angular.module('refinersApp', [
+    'refinersApp.controllers',
+    'refinersApp.filters',
+    'refinersApp.services',
+    'refinersApp.directives'
 ]).
 config(function ($routeProvider, $locationProvider) {
   $routeProvider.
-    when('/view1', {
-      templateUrl: 'partials/partial1',
-      controller: 'MyCtrl1'
+    when('/', {
+      templateUrl: 'partials/home.html',
+      controller: 'homeCtrl'
     }).
-    when('/view2', {
-      templateUrl: 'partials/partial2',
-      controller: 'MyCtrl2'
+    when('/training', {
+      templateUrl: 'partials/training.html',
+      controller: 'trainingCtrl'
+    }).
+    when('/1911', {
+      templateUrl: 'partials/1911.html',
+      controller: '1911Ctrl'
+    }).
+    when('/suppressor', {
+      templateUrl: 'partials/suppressor.html',
+      controller: 'suppressorCtrl'
+    }).
+    when('/services', {
+      templateUrl: 'partials/services.html',
+      controller: 'servicesCtrl'
+    }).
+    when('/contact', {
+      templateUrl: 'partials/contact.html',
+      controller: 'contactCtrl'
+    }).
+    when('/about', {
+      templateUrl: 'partials/about.html',
+      controller: 'aboutCtrl'
+    }).
+    when('/location', {
+      templateUrl: 'partials/location.html',
+      controller: 'locationCtrl'
     }).
     otherwise({
-      redirectTo: '/view1'
+      redirectTo: '/'
     });
 
   $locationProvider.html5Mode(true);

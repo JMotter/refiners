@@ -1,0 +1,49 @@
+.refiner-body {
+    padding-top: 50px;
+    background-color: #eee;
+    padding-bottom: 50px;
+}
+.refiner-body h3 {
+    border-bottom: 1px solid #fff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255,255,255);
+}
+.refiner-break-top {
+    border-top: 1px solid #fff;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+.refiner-image-stacked  {
+    align: center;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.refiner-nav {background-color: #800080}
+.navbar .navbar-nav > li > a {color:#E6E6E6}
+.navbar .navbar-brand{color:#E6E6E6}
+.navbar .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.refiner-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0px;
+    color: #E6E6E6;
+    text-align: center;
+    background-color: #800080;
+}
+.refiner-footer a{color:#E6E6E6}
+.refiner-footer ul{display:block; padding-left: 0}
+.refiner-footer li{display:inline-block}
+.refiner-footer-links {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.refiner-footer-links li+li{margin-left:15px}
+@media (min-width:768px){.refiner-footer{text-align:left}}
