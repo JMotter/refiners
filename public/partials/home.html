@@ -1,1 +1,42 @@
-Home page
+<h3>Todo: We will have the srolling images on a carousel here!</h3>
+
+<h4>Let's plan on 2 columns with 2 rows for: Training, 1911's, Suppressors,  and Services.</h4>
+
+<p>Each of the above 4 should have some short text with it.  Each will be a link to the approapriate page for it.</p>
+
+<div id="Carousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="Carousel" data-slide-to="0" class="active"></li>
+        <li data-target="Carousel" data-slide-to="1"></li>
+        <li data-target="Carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/c.png" class="img-responsive">
+        </div>
+        <div class="item">
+            <img src="images/b.png" class="img-responsive">
+        </div>
+        <div class="item">
+            <img src="images/a.png" class="img-responsive">
+        </div>
+    </div>
+    <span class="left carousel-control" data-target="#Carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </span>
+    <span class="right carousel-control" data-target="#Carousel" data-slide="next">
+       <span class="glyphicon glyphicon-chevron-right"></span>
+    </span>
+</div>
+
+
+<div id="Col1"></div>
+
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel({
+            interval: 2000
+        });
+    });
+</script>
+
