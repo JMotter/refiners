@@ -1,42 +1,59 @@
-<h3>Todo: We will have the srolling images on a carousel here!</h3>
-
-<h4>Let's plan on 2 columns with 2 rows for: Training, 1911's, Suppressors,  and Services.</h4>
-
-<p>Each of the above 4 should have some short text with it.  Each will be a link to the approapriate page for it.</p>
-
-<div id="Carousel" class="carousel slide">
+<div id="refinerCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="Carousel" data-slide-to="0" class="active"></li>
-        <li data-target="Carousel" data-slide-to="1"></li>
-        <li data-target="Carousel" data-slide-to="2"></li>
+        <li data-target="#refinerCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#refinerCarousel" data-slide-to="1"></li>
+        <li data-target="#refinerCarousel" data-slide-to="2"></li>
+        <li data-target="#refinerCarousel" data-slide-to="3"></li>
     </ol>
-    <div class="carousel-inner">
-        <div class="item active">
-            <img src="images/c.png" class="img-responsive">
+    <div class="carousel-inner refiner-carousel-image" role="listbox">
+        <div class="item active" align="center">
+            <img src="images/logo.jpg" class="img-responsive" align="center">
         </div>
-        <div class="item">
-            <img src="images/b.png" class="img-responsive">
+        <div class="item" align="center">
+            <img src="images/1911.jpg" class="img-responsive" align="center">
         </div>
-        <div class="item">
-            <img src="images/a.png" class="img-responsive">
+        <div class="item" align="center">
+            <img src="images/supressor2.jpg" class="img-responsive" align="center">
+        </div>
+        <div class="item" align="center">
+            <img src="images/training3.jpg" class="img-responsive" align="center">
         </div>
     </div>
-    <span class="left carousel-control" data-target="#Carousel" data-slide="prev">
+    <span class="left carousel-control" data-target="#refinerCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
     </span>
-    <span class="right carousel-control" data-target="#Carousel" data-slide="next">
+    <span class="right carousel-control" data-target="#refinerCarousel" data-slide="next">
        <span class="glyphicon glyphicon-chevron-right"></span>
     </span>
 </div>
 
+<div class="row refiner-home-row">
+    <div class="col-md-3 col-sm-5">
+        <img width="140" height="140" class="img-circle" alt="Training" src="images/training2.jpg"></img>
+        <h3>Training</h3>
+        <p>add training text here</p>
+        <p><a class="btn btn-default" href="training">Training »</a></p>
+    </div>
+    <div class="col-md-3 col-sm-5">
+        <img width="140" height="140" class="img-circle" alt="1911" src="images/1911.jpg"></img>
+        <h3>1911's</h3>
+        <p>add 1911 text here</p>
+        <p><a class="btn btn-default" href="1911">1911's »</a></p>
+    </div>
+    <div class="col-md-3 col-sm-5">
+        <img width="140" height="140" class="img-circle" alt="Suppressor" src="images/training2.jpg"></img>
+        <h3>Suppressors</h3>
+        <p>add Suppressors text here</p>
+        <p><a class="btn btn-default" href="suppressor">Suppressors »</a></p>
+    </div>
+    <div class="col-md-3 col-sm-5">
+        <img width="140" height="140" class="img-circle" alt="Services" src="images/training3.jpg"></img>
+        <h3>Services</h3>
+        <p>add Services text here</p>
+        <p><a class="btn btn-default" href="services">Services »</a></p>
+    </div>
+</div>
 
-<div id="Col1"></div>
 
-<script>
-    $(document).ready(function(){
-        $('.carousel').carousel({
-            interval: 2000
-        });
-    });
-</script>
+
 

@@ -3,6 +3,10 @@
     background-color: #eee;
     padding-bottom: 50px;
 }
+.refiner-home-row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .refiner-body h3 {
     color: #800080;
     border-bottom: 1px solid #fff;
@@ -28,6 +32,20 @@
     align: center;
     padding-top: 20px;
     text-align: justify;
+}
+.refiner-image-full {
+    align: center;
+    padding: 20px;
+    width: 30%;
+}
+.refiner-image-full-side {
+    align: center;
+    width: 50%;
+}
+@media (min-width:768px){.refiner-image-full-side{width: 100%}}
+.refiner-carousel-image img {
+    max-height: 250px;
+    align: center;
 }
 
 .refiner-nav {background-color: #800080}
